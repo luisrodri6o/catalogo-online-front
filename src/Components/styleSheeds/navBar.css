@@ -1,26 +1,24 @@
-
-  
-  /*                                                                    menu */
-  .header {
+/*                                                                    menu */
+.header {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     height: 2em;
     width: auto;
     justify-content: space-between;
-  }
-  .boton {
+}
+.boton {
     font-family: "Crimson Pro";
     border: 1px solid #ffffff;
     height: inherit;
     padding: 0.5em 0.5em;
     text-transform: uppercase;
-  }
-  #btn-menu {
+}
+#btn-menu {
     display: none;
-  }
-  /*                                       hamburger Buttom */
-  .togle {
+}
+/*                                       hamburger Buttom */
+.togle {
     cursor: pointer;
     position: fixed;
     top: 2%;
@@ -32,33 +30,33 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 0.3em;
-  }
-  .togle span {
+}
+.togle span {
     position: relative;
     width: 2em;
     height: 4px;
     border-radius: 10px;
     transition: all 600ms;
     background-color: white;
-  }
-  #btn-menu:checked ~ .togle {
+}
+#btn-menu:checked ~ .togle {
     top: 4%;
-  }
-  
-  #btn-menu:checked ~ .togle span {
+}
+
+#btn-menu:checked ~ .togle span {
     position: absolute;
-  }
-  #btn-menu:checked ~ .togle .sp3 {
+}
+#btn-menu:checked ~ .togle .sp3 {
     opacity: 0;
-  }
-  #btn-menu:checked ~ .togle .sp2 {
+}
+#btn-menu:checked ~ .togle .sp2 {
     transform: rotate(140deg);
-  }
-  #btn-menu:checked ~ .togle .sp1 {
+}
+#btn-menu:checked ~ .togle .sp1 {
     transform: rotate(-140deg);
-  }
-  /*                                         menu content */
-  .menu {
+}
+/*                                         menu content */
+.menu {
     margin-left: -100%;
     display: flex;
     flex-wrap: wrap;
@@ -68,13 +66,13 @@
     z-index: 1;
     justify-content: center;
     transition: 500ms;
-  }
-  #btn-menu:checked ~ .menu {
+}
+#btn-menu:checked ~ .menu {
     margin-left: 0;
     position: fixed;
     top: 0;
-  }
-  .menu ul {
+}
+.menu ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -82,47 +80,46 @@
     row-gap: 5%;
     text-align: center;
     font-size: 1.1em;
-  }
+}
 
-  
-  .item {
+.item {
     padding: 0;
-  }
-  .item:hover {
+}
+.item:hover {
     border-bottom: solid;
-  }
-  .item:active {
+}
+.item:active {
     color: blueviolet;
-  }
-  /*                                                                media screem */
-  @media screen and (min-width: 660px){
-.header {
-  position: sticky;
-  top: 0;
 }
-.menu {
-  position: relative;
-  width: 50%;
-  height: inherit;
-}
-#btn-menu:checked ~ .menu {
-  position: relative;
-}
-.section {
-  margin: 6% 0%;
-}
+/*                                                                media screem */
+@media screen and (min-width: 660px) {
+    .header {
+        position: sticky;
+        top: 0;
+    }
+    .menu {
+        position: relative;
+        width: 50%;
+        height: inherit;
+    }
+    #btn-menu:checked ~ .menu {
+        position: relative;
+    }
+    .section {
+        margin: 6% 0%;
+    }
 
-.menu ul {
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu .item {
-  padding: 0;
-  width: 1fr;
-  height: max-content;
-}
-.togle {
-  display: none;
-}
+    .menu ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu .item {
+        padding: 0;
+        width: 1fr;
+        height: max-content;
+    }
+    .togle {
+        display: none;
+    }
 }
